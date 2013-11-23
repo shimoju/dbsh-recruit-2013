@@ -27,9 +27,11 @@ html lang="ja"
 
     header role="banner"
       .container
-        .jumbotron
-          h1= current_page.data.title
-          p= link_to "Read Online Documentation", "http://middlemanapp.com/"
+        .row
+          .col-sm-3
+            h1= link_to image_tag("tamasoku.png", alt: "タマ速", class: "img-responsive"), "."
+          .col-sm-9.hidden-xs
+            .ad= link_to image_tag("madomagi.png", alt: "広告"), "senkou13.pdf", class: "thumbnail"
 
     .wrap
       .container
