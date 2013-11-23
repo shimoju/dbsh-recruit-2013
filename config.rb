@@ -62,10 +62,10 @@ configure :build do
     config.line_comments = false
   end
 
-  # activate :minify_css
+  activate :minify_css
 
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
 
   # Enable cache buster
   # activate :asset_hash
@@ -77,5 +77,5 @@ configure :build do
   # set :http_prefix, "/Content/images/"
 
   # Minify HTML on build
-  # Slim::Engine.set_default_options pretty: false
+  Slim::Engine.set_default_options pretty: false
 end
