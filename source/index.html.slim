@@ -2,5 +2,15 @@
 title: 土橋ゼミに潜入してきたけど何か質問ある？
 ---
 
-h1 bootstrap-sass-slim
-p A Middleman Project Template built with Twitter Bootstrap, Sass & Slim
+h2= current_page.data.title
+
+dl.thread
+  - data.thread.res.each do |res|
+    dt
+      ul
+        li.number= res.number
+        li.name= res.name || data.thread.noname_name
+        li.date= res.date
+        li.id= res.id
+    dd
+      p.text= res.text
