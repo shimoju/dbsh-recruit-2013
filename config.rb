@@ -81,3 +81,7 @@ configure :build do
   # Minify HTML on build
   Slim::Engine.set_default_options pretty: false
 end
+
+activate :deploy do |deploy|
+  deploy.method = :git
+end
