@@ -26,3 +26,7 @@ footer {
   padding-bottom: 20px;
   text-align: center;
 }
+
+.list {
+  @include horizontal-list;
+}
