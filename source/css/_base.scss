@@ -1,5 +1,28 @@
 // Base
 
 body {
+  background: $body-bg image-url("bright_squares.png");
   padding-top: $navbar-height;
+}
+
+header {
+  background: $body-bg;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+  padding: 10px 0;
+
+  h1 {
+    margin: 0;
+    img {
+      margin: 0 auto;
+    }
+  }
+  .thumbnail {
+    margin-bottom: 0;
+  }
+}
+
+footer {
+  padding-bottom: 20px;
+  text-align: center;
 }
