@@ -46,13 +46,19 @@ html lang="ja"
 
           .col-sm-9
             aside
-              .row.hidden-xs
+              .row.hidden-xs.featured-thread
                 .col-sm-4
-                  = link_to image_tag("tower.png", alt: "注目スレッド"), "senkou13.pdf", class: "thumbnail"
+                  figure
+                    = link_to image_tag("tower.png", alt: "注目スレッド"), "senkou13.pdf", class: "thumbnail"
+                    figcaption 土橋ゼミが追いコンでシャンパンタワーをした結果ｗｗｗ
                 .col-sm-4
-                  = link_to image_tag("putchom.png", alt: "注目スレッド"), "senkou13.pdf", class: "thumbnail"
+                  figure
+                    = link_to image_tag("putchom.png", alt: "注目スレッド"), "senkou13.pdf", class: "thumbnail"
+                    figcaption 僕が土橋ゼミを出てデザイナーになった話
                 .col-sm-4
-                  = link_to image_tag("kachan.png", alt: "注目スレッド"), "senkou13.pdf", class: "thumbnail"
+                  figure
+                    = link_to image_tag("kachan.png", alt: "注目スレッド"), "senkou13.pdf", class: "thumbnail"
+                    figcaption J( ’ｰ`)し「たかしへ。土橋ゼミの面接申し込んでおいたわよ」
 
             aside
               .ad= link_to image_tag("manga.jpg", alt: "広告"), "senkou13.pdf", class: "thumbnail"

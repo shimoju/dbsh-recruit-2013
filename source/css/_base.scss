@@ -41,6 +41,20 @@ footer {
   @include horizontal-list;
 }
 
+.featured-thread {
+  figure {
+    position: relative;
+  }
+  figcaption {
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    bottom: 0;
+    height: 40px;
+    overflow: hidden;
+    position: absolute;
+  }
+}
+
 .thread {
   dd {
     margin-bottom: 40px;
