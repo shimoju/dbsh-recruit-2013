@@ -5,6 +5,10 @@ body {
   padding-top: $navbar-height;
 }
 
+h2 {
+  font-weight: bold;
+}
+
 header {
   background: $body-bg;
   border-bottom: 1px solid #ddd;
@@ -27,6 +31,40 @@ footer {
   text-align: center;
 }
 
+.title {
+  border-bottom: 1px solid $well-border;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+}
+
 .list {
   @include horizontal-list;
+}
+
+.thread {
+  dd {
+    margin-bottom: 40px;
+  }
+  p {
+    font-size: $font-size-large;
+    font-weight: bold;
+  }
+  em {
+    color: orange;
+    font-size: ceil(($font-size-large * 1.5));
+    font-style: normal;
+  }
+  strong {
+    color: red;
+    font-size: ceil(($font-size-large * 2));
+  }
+  .name {
+    color: green;
+  }
+}
+
+.original-thread {
+  color: $gray-light;
+  font-size: $font-size-small;
+  text-align: right;
 }
