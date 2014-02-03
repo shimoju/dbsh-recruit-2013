@@ -8,5 +8,7 @@ gem 'middleman-livereload', '~> 3.1.1'
 # For faster file watcher updates on Windows:
 gem 'wdm', '~> 0.1.0', platforms: [:mswin, :mingw]
 
+gem 'middleman-deploy', '~> 0.1.4'
+
 gem 'slim', '~> 2.0.2'
 gem 'bootstrap-sass', '~> 3.1.0'
