@@ -82,3 +82,11 @@ footer {
   font-size: $font-size-small;
   text-align: right;
 }
+
+// xs (phone) size
+@media (max-width: $screen-xs-max) {
+  body {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+}
