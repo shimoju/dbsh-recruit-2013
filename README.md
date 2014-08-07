@@ -15,6 +15,6 @@ bundle install
 bundle exec middleman
 ```
 
-`http://localhost:4567/`にアクセス
+[`http://localhost:4567/`](http://localhost:4567/)にアクセス
 
 `bundle exec middleman build`で静的サイトが生成される
